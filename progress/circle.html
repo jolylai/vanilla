@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Circle</title>
+    <link rel="stylesheet" href="circle.css" />
+  </head>
+  <body>
+    <div class="progress-circle">
+      <svg viewBox="0 0 100 100">
+        <path
+          class="progress-circle-trake"
+          d="
+            M 50 50
+            m 0 -47
+            a 47 47 0 1 1 0 94
+            a 47 47 0 1 1 0 -94
+          "
+          stroke="#d9d9d9"
+          stroke-width="6"
+          fill="none"
+          style="stroke-dasharray: 60px 60px; stroke-dashoffset: 0px"
+        ></path>
+      </svg>
+    </div>
+  </body>
+</html>
