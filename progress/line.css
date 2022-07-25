@@ -17,45 +17,32 @@ body {
 }
 
 .progress {
-  line-height: 1.5715;
-  display: inline-block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #000000d9;
-  font-size: 14px;
-  font-variant: tabular-nums;
-  line-height: 1.5715;
-  list-style: none;
-  font-feature-settings: "tnum";
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
-.progress-line {
-  font-size: 14px;
+.progress-bar {
+  flex-grow: 1;
 }
 
 .progress-outer {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 100%;
-  margin-right: calc(-2em - 8px);
-  padding-right: calc(2em + 8px);
+  flex-grow: 1;
+  background-color: #0000000a;
+  border-radius: 100px;
 }
 
 .progress-inner {
-  background-color: #0000000a;
-  position: relative;
+  width: 30%;
+  min-height: 6px;
   border-radius: 100px;
+  position: relative;
+  background-color: #1890ff;
+  text-align: right;
 }
 
-.progress-bg {
-  width: 30%;
-  height: 8px;
-  background-color: #1890ff;
-  border-radius: 100px;
-  position: relative;
+.progress-text {
+  margin-left: 8px;
+  min-width: 50px;
 }
 
 .progress-bg::before {
@@ -68,10 +55,9 @@ body {
   content: "";
 }
 
-.progress-text {
-  display: inline-block;
-  width: 2em;
-  margin-left: 8px;
+.progress-text-inner {
+  color: #fff;
+  padding: 0 8px;
 }
 
 @keyframes progress-active {
